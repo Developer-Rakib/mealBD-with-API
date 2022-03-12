@@ -6,6 +6,13 @@ let meals = document.querySelector("#meals");
 let meal = document.querySelector("#meal");
 let load = document.querySelector("#loading");
 
+// Enter button 
+inputFeild.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.key == "Enter") {
+        seacrhBtn.click();
+    }
+});
 
 
 fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=fish")
