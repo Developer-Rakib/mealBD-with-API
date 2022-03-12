@@ -74,6 +74,7 @@ function displayData(datas) {
 
             div.addEventListener("click", () => {
                 meal.textContent = "";
+                location.hash = "#meal";
                 let Div1 = document.createElement("div");
 
                 console.log(data.strDrink);
@@ -90,7 +91,7 @@ function displayData(datas) {
 
                     `;
                 meal.appendChild(Div1);
-
+                location.hash = "#";
 
             })
         });
